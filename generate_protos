@@ -1,0 +1,6 @@
+#!/bin/bash
+for FILE in schema/ersschema/*.proto;
+do
+    echo "Generating protocols for ${FILE}"
+    protoc -I./schema/ --python_out=python_not_for_dunedaq/ ${FILE}
+done

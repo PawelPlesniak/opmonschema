@@ -1,0 +1,2 @@
+kafka
+googleapis-common-protos==1.63.1
